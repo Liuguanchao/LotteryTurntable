@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <title>Web版转盘抽奖</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <style type="text/css">
+        .main {
+            display: block;
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+
+            .main .turntable {
+                display: block;
+                width: 100%;
+                position: relative;
+            }
+
+                .main .turntable canvas.item {
+                    width: 100%;
+                }
+
+                .main .turntable img.pointer {
+                    position: absolute;
+                    width: 31.5%;
+                    height: 42.5%;
+                    left: 34.8%;
+                    top: 23%;
+                }
+    </style>
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <script src="Scripts/jQueryRotate.js"></script>
+    <script src="Scripts/jquery.easing.1.3.js"></script>
+    <script src="Scripts/Index.js"></script>
+</head>
+
+<body>
+    <!--style="background-image: url('../../Images/Login/bg.jpg'); "-->
+    <h1>转盘抽奖</h1>
+    <div class="main">
+        <div class="turntable" style="background-image:url('Images/turntable.png'); height:422px;width:422px;">
+            <canvas class="item" id="myCanvas" width="422px" height="422px"> </canvas>
+            <img id="start" class="pointer" src="Images/strat.png" />
+        </div>
+    </div>
+</body>
+</html>
